@@ -1,193 +1,82 @@
 # Pokédex App
 
-A modern React application that consumes the PokéAPI to display Pokémon information with a beautiful, responsive interface.
+Una aplicación moderna en React que consume la PokéAPI para mostrar información de Pokémon con una interfaz atractiva y responsiva.
 
-## Features
+## Características
 
-### 🏠 Landing Page
+### 🏠 Página de inicio
 
-- Attractive landing page with animations
-- "START" button to navigate to the Pokémon grid
-
+- Página de inicio atractiva con animaciones
+  
+- Botón "START" para navegar al grid de Pokémon
+  
 ### 🎯 PokeGrid
 
-- Responsive 3-column grid layout
-- Pokémon cards showing name and sprite
-- Click on cards to view detailed information
-- Loading spinner during data fetching
-- Search functionality by Pokémon name
-- Add/remove Pokémon from favorites
-- Filter to show only favorite Pokémon
-- Pagination (30 Pokémon per page)
-- Unit tests for component functionality
+- Grid responsivo con diseño de 3 columnas
+
+- Tarjetas de Pokémon mostrando nombre y sprite
+
+- Clic en las tarjetas para ver información detallada
+
+- Spinner de carga durante la obtención de datos
+
+- Funcionalidad de búsqueda por nombre de Pokémon
+
+- Agregar/eliminar Pokémon de favoritos
+
+- Filtro para mostrar solo los Pokémon favoritos
+
+- Paginación (30 Pokémon por página)
+
+- Pruebas unitarias para la funcionalidad de componentes
+
+📋 Pokédex
 
 ### 📋 Pokedex
 
-- Detailed Pokémon information display
-- Number, name, types, description, image
-- Weight and height information
-- Back button to return to grid
-- Favorite toggle functionality
+- Visualización detallada de la información del Pokémon
+
+- Número, nombre, tipos, descripción e imagen
+
+- Información de peso y altura
+
+- Botón de regreso para volver al grid
+
+- Funcionalidad para marcar/desmarcar favoritos
 
 ## Technologies Used
 
-- **React 18** - Modern React with hooks
-- **React Router** - Client-side routing
-- **PokéAPI** - Pokémon data source
-- **Vite** - Fast build tool and dev server
-- **Vitest** - Unit testing framework
-- **Testing Library** - Component testing utilities
-- **CSS3** - Modern styling with responsive design
+- **React 18** 
+- **React Router** 
+- **PokéAPI** 
+- **Vite** 
+- **Vitest** 
+- **Testing Library** 
+- **CSS3** 
 
 ## Project Structure
 
 ```
 src/
-├── components/          # Reusable UI components
-│   ├── Loader.jsx      # Loading spinner
-│   ├── PokemonCard.jsx # Individual Pokémon card
-│   ├── SearchBar.jsx   # Search input component
-│   └── Pagination.jsx  # Page navigation
-├── pages/              # Main application pages
-│   ├── Landing.jsx     # Welcome page
-│   ├── PokeGrid.jsx    # Pokémon grid view
-│   └── Pokedex.jsx     # Detailed Pokémon view
-├── hooks/              # Custom React hooks
-│   ├── usePokemon.js   # Pokémon data management
-│   └── useFavorites.js # Favorites management
-├── services/           # API service functions
-│   └── pokemonApi.js   # PokéAPI integration
-├── test/               # Test files
-│   ├── setup.js        # Test configuration
-│   └── PokeGrid.test.jsx # Component tests
-└── utils/              # Utility functions
+├── components/          # Componentes reutilizables de UI
+│   ├── Loader.jsx      # Spinner de carga
+│   ├── PokemonCard.jsx # Tarjeta individual de Pokémon
+│   ├── SearchBar.jsx   # Componente de búsqueda
+│   └── Pagination.jsx  # Navegación de páginas
+├── pages/              # Páginas principales de la aplicación
+│   ├── Landing.jsx     # Página de bienvenida
+│   ├── PokeGrid.jsx    # Vista en grid de Pokémon
+│   └── Pokedex.jsx     # Vista detallada de Pokémon
+├── hooks/              # Hooks personalizados de React
+│   ├── usePokemon.js   # Manejo de datos de Pokémon
+│   └── useFavorites.js # Manejo de favoritos
+├── services/           # Funciones de servicio para API
+│   └── pokemonApi.js   # Integración con PokéAPI
+├── test/               # Archivos de prueba
+│   ├── setup.js        # Configuración de pruebas
+│   └── PokeGrid.test.jsx # Pruebas de componentes
+└── utils/              # Funciones utilitarias
+
 ```
 
-## Assets
 
-### Logo Customization
-
-- Place your `pokedex.png` image in the `public/` folder
-- The logo will automatically replace the default Pokédex logo in the header
-- **Recommended size**: 300px width × 80px height maximum
-- **Format**: PNG with transparency support
-- **Fallback**: If no logo is found, a beautiful animated CSS logo will be displayed
-
-### Logo Examples
-
-If you don't have a custom logo, you can:
-
-1. Download from Google Images: "Pokédex logo PNG transparent"
-2. Use the default animated CSS logo (automatically displayed)
-3. Create your own using design tools
-
-## Getting Started
-
-### Prerequisites
-
-- Node.js (v20.19.0 or higher)
-- npm or yarn
-
-### Installation
-
-1. Clone the repository
-2. Install dependencies:
-
-   ```bash
-   npm install
-   ```
-
-3. **Add your logo** (optional):
-   ```bash
-   # Place your pokedex.png in the public folder
-   cp /path/to/your/logo.png ./public/pokedex.png
-   ```
-
-### Development
-
-Start the development server:
-
-```bash
-npm run dev
-```
-
-The application will be available at `http://localhost:5173`
-
-### Logo Testing
-
-- With logo: The custom image will be displayed
-- Without logo: An animated CSS Pokédex logo will appear
-- Logo not found: Graceful fallback to text header
-
-### Testing
-
-Run the test suite:
-
-```bash
-npm run test
-```
-
-### Build
-
-Build for production:
-
-```bash
-npm run build
-```
-
-## API Integration
-
-The application integrates with the [PokéAPI](https://pokeapi.co/) to fetch:
-
-- Pokémon list with pagination
-- Detailed Pokémon information
-- Pokémon species data for descriptions
-- Official artwork images
-
-## Features Overview
-
-### Responsive Design
-
-- Mobile-first approach
-- Adaptive grid layouts
-- Touch-friendly interactions
-
-### State Management
-
-- Custom hooks for data fetching
-- Local storage for favorites persistence
-- Efficient re-rendering with React hooks
-
-### User Experience
-
-- Smooth animations and transitions
-- Loading states for better feedback
-- Intuitive navigation flow
-- Search and filter capabilities
-
-### Code Quality
-
-- Clean, readable code structure
-- Modular component architecture
-- Comprehensive unit tests
-- English variable names and comments
-
-## Browser Support
-
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Add tests for new functionality
-5. Ensure all tests pass
-6. Submit a pull request
-
-## License
-
-This project is licensed under the MIT License.
