@@ -44,7 +44,7 @@ Una aplicación moderna en React que consume la PokéAPI para mostrar informaci�
 
 - Funcionalidad para marcar/desmarcar favoritos
 
-## Technologies Used
+## Tecnologías utilizadas
 
 - **React 18** 
 - **React Router** 
@@ -54,7 +54,7 @@ Una aplicación moderna en React que consume la PokéAPI para mostrar informaci�
 - **Testing Library** 
 - **CSS3** 
 
-## Project Structure
+## Estructura del proyecto
 
 ```
 src/
