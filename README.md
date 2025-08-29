@@ -30,7 +30,6 @@ Una aplicación moderna en React que consume la PokéAPI para mostrar informaci�
 
 - Pruebas unitarias para la funcionalidad de componentes
 
-📋 Pokédex
 
 ### 📋 Pokedex
 
